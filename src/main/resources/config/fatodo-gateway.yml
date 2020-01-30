@@ -17,7 +17,12 @@ zuul:
     socket-timeout-millis: 20000
 
   routes:
-    auth-service:
+    fatodo-test-service:
+      path: /test/**
+      serviceId: fatodo-test-service
+      stripPrefix: false
+      sensitiveHeaders
+    fatodo-auth-service:
       path: /authentication/**
       serviceId: fatodo-authentication-service
       stripPrefix: false
