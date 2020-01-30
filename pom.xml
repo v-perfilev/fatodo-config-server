@@ -19,11 +19,23 @@
         <spring-cloud.version>2.2.1.RELEASE</spring-cloud.version>
     </properties>
 
+    <!-- Dependency management -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Cloud management -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
-        <!-- Spring Boot -->
+        <!-- Spring Cloud -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
         <!-- Spring Test -->
