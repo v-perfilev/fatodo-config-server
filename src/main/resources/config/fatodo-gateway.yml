@@ -18,12 +18,12 @@ zuul:
 
   routes:
     fatodo-test-service:
-      path: /test/**
+      path: /api/test/**
       serviceId: fatodo-test-service
       stripPrefix: false
       sensitiveHeaders:
     fatodo-auth-service:
-      path: /authentication/**
+      path: /api/authentication/**
       serviceId: fatodo-authentication-service
       stripPrefix: false
       sensitiveHeaders:
