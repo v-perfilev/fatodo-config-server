@@ -1,3 +1,6 @@
+server:
+  port: 4000
+
 hystrix:
   command:
     default:
@@ -27,6 +30,3 @@ zuul:
       serviceId: fatodo-authentication-service
       stripPrefix: false
       sensitiveHeaders:
-
-server:
-  port: 4000
