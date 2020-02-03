@@ -1,9 +1,6 @@
 eureka:
   instance:
     prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://${DISCOVERY:localhost}:8761/eureka/
 
 hystrix:
   command:
