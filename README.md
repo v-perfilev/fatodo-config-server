@@ -1,2 +1,2 @@
-# FaToDo config-service
-FaToDo config-service app based on base-skeleton.
+# FaToDo config-server
+FaToDo config-server app based on base-skeleton.

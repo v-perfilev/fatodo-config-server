@@ -11,8 +11,8 @@
     <groupId>com.persoff68</groupId>
     <artifactId>fatodo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>fatodo-config-service</name>
-    <description>Config service for FaToDo</description>
+    <name>fatodo-config-server</name>
+    <description>Config server for FaToDo</description>
 
     <properties>
         <java.version>13</java.version>
