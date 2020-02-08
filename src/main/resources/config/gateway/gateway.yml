@@ -1,18 +1,7 @@
 server:
   port: 4000
 
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 20000
-
-ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
-
+# Gateway config
 zuul:
   ignoredServices: '*'
   host:
@@ -30,3 +19,16 @@ zuul:
       serviceId: fatodo-authentication-service
       stripPrefix: false
       sensitiveHeaders:
+
+# Hystrix and Ribbon
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000

@@ -1,0 +1,8 @@
+server:
+  port: 8000
+
+# DB config
+spring:
+  data:
+    mongodb:
+      database: test-service
