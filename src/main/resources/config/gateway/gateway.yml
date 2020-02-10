@@ -9,15 +9,17 @@ zuul:
     socket-timeout-millis: 20000
 
   routes:
-    fatodo-test-service:
+
+    test-service:
       path: /api/test/**
-      serviceId: fatodo-test-service
-      stripPrefix: false
+      serviceId: test-service
+      stripPrefix: true
       sensitiveHeaders:
-    fatodo-auth-service:
-      path: /api/authentication/**
-      serviceId: fatodo-authentication-service
-      stripPrefix: false
+
+    auth-service:
+      path: /api/auth/**
+      serviceId: auth-service
+      stripPrefix: true
       sensitiveHeaders:
 
 # Hystrix and Ribbon
