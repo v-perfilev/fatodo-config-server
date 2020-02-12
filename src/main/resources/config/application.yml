@@ -1,3 +1,6 @@
+server:
+  use-forward-headers: true
+
 eureka:
   instance:
     prefer-ip-address: true

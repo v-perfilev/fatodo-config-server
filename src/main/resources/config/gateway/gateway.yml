@@ -1,8 +1,10 @@
 server:
   port: 4000
 
+
 # Gateway config
 zuul:
+  sensitiveHeaders: Authorization
   ignoredServices: '*'
   host:
     connect-timeout-millis: 20000
@@ -14,6 +16,12 @@ zuul:
       path: /api/test/**
       serviceId: test-service
       stripPrefix: true
+      sensitiveHeaders:
+
+    oauth2-service:
+      path: /api/oauth2/**
+      serviceId: auth-service
+      stripPrefix: false
       sensitiveHeaders:
 
     auth-service:
