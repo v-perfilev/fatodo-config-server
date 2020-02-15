@@ -1,8 +1,0 @@
-server:
-  port: 8761
-
-# Registry server config
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false

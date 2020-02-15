@@ -1,8 +1,0 @@
-server:
-  port: 8002
-
-# DB config
-spring:
-  data:
-    mongodb:
-      database: user-service
