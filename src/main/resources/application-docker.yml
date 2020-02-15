@@ -1,0 +1,11 @@
+config-repo-path: file:///tmp/fatodo-config-repo/
+
+spring:
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: ${config-repo-path}, ${config-repo-path}{application}
