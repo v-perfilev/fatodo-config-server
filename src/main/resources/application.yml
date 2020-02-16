@@ -4,7 +4,7 @@ server:
 spring:
   security:
     user:
-      name: fatodo-config-user
+      name: config-user
       password: ${CONFIG_SERVER_PASSWORD:dev}
 
 
