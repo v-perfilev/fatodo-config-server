@@ -1,0 +1,15 @@
+config-repo-path: classpath:/
+
+server:
+  address: localhost
+  port: 10344
+
+spring:
+  profiles:
+    include: native
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: ${config-repo-path}, ${config-repo-path}/{application}
