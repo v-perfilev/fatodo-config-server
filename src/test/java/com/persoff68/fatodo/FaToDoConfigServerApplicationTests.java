@@ -26,7 +26,7 @@ class FaToDoConfigServerApplicationTests {
 
     @Test
     void contextLoads() throws Exception {
-        BaseSkeletonApplication.main(new String[]{});
+        FaToDoConfigServerApplication.main(new String[]{});
         mvc.perform(get("/"))
                 .andExpect(status().isNotFound());
     }
