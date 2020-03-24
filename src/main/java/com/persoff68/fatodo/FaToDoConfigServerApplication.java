@@ -15,7 +15,7 @@ public class FaToDoConfigServerApplication {
         Properties defaultProfileProperties = AppProfileUtils.getDefaultProfile();
         SpringApplication app = new SpringApplication(FaToDoConfigServerApplication.class);
         app.setDefaultProperties(defaultProfileProperties);
-        app.run(args);
+        app.run();
     }
 
 }
