@@ -9,11 +9,11 @@ import java.util.Properties;
 
 @SpringBootApplication
 @EnableConfigServer
-public class FaToDoConfigServerApplication {
+public class FatodoConfigServerApplication {
 
     public static void main(String[] args) {
         Properties defaultProfileProperties = AppProfileUtils.getDefaultProfile();
-        SpringApplication app = new SpringApplication(FaToDoConfigServerApplication.class);
+        SpringApplication app = new SpringApplication(FatodoConfigServerApplication.class);
         app.setDefaultProperties(defaultProfileProperties);
         app.run();
     }
