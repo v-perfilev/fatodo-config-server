@@ -10,3 +10,4 @@ ${AnsiColor.BRIGHT_MAGENTA}
 :: Fatodo : config-server ::
 ${AnsiColor.BLUE}:: Running Spring Boot ${spring-boot.version} ::
 :: developed by persoff68 :: ${AnsiColor.DEFAULT}
+
