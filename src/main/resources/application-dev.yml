@@ -1,4 +1,4 @@
-config-repo-path: file:///Users/vladimir.perfilev/Projects/MyProjects/fatodo/fatodo-config-repo
+config-repo-path: file:///Users/vladimir.perfilev/Projects/Private/Fatodo/apps/fatodo-config-repo
 
 spring:
   profiles:
