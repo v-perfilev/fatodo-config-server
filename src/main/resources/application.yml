@@ -4,13 +4,9 @@ server:
 spring:
   application:
     name: config-server
+  config:
+    use-legacy-processing: true
   security:
     user:
       name: config-user
       password: ${CONFIG_SERVER_PASSWORD:dev}
-
-
-
-
-
-
