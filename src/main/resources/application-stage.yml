@@ -7,3 +7,4 @@ spring:
         git:
           uri: ${config-repo-path}
           searchPaths: '{application}'
+          defaultLabel: 'master'
